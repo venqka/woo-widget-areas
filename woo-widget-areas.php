@@ -9,3 +9,4 @@ Version: 1.0
 */
 
 include( 'woo-sidebars.php' );
+include( 'woo-hooks.php' );
