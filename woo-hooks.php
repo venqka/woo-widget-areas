@@ -12,9 +12,9 @@ add_action( 'woocommerce_before_main_content', 'product_category_before_content_
 
 function single_product_before_add_to_cart_button() {
 
-	is_product() {
-		dynamic_sidebar( 'product-category-before-content' );
+	if( is_product() ) {
+		dynamic_sidebar( 'single-product-before-add-to-cart' );
 	}
-		
+			
 }
 add_action( 'woocommerce_before_add_to_cart_button', 'single_product_before_add_to_cart_button' );
