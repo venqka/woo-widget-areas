@@ -8,3 +8,4 @@ Author URI: devnecks.com
 Version: 1.0
 */
 
+include( 'woo-sidebars.php' );
