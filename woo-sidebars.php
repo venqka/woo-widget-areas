@@ -40,4 +40,17 @@ $single_product_after_add_to_cart_button_args = array(
 );
 register_sidebar( $single_product_after_add_to_cart_button_args );
 
+//Single product after meta
+$single_product_after_meta_args = array(
+	'name'          => __( 'Single product after meta', 'dn' ),
+	'id'            => 'single-product-after-meta',
+	'description'   => __( 'This widget area is placed after the meta on single product', 'dn' ),
+	'class'         => '',
+	'before_widget' => '<li id="%1$s" class="widget %2$s wwa single-product-after-meta">',
+	'after_widget'  => '</li>',
+	'before_title'  => '<h2 class="widgettitle">',
+	'after_title'   => '</h2>' 
+);
+register_sidebar( $single_product_after_meta_args );
+
 
