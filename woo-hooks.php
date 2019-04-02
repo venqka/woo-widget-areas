@@ -27,3 +27,12 @@ function single_product_after_add_to_cart_button() {
 			
 }
 add_action( 'woocommerce_after_add_to_cart_button', 'single_product_after_add_to_cart_button' );
+
+function single_product_after_meta_button() {
+
+	if( is_product() ) {
+		dynamic_sidebar( 'single-product-after-meta' );
+	}
+			
+}
+add_action( 'woocommerce_product_meta_end', 'single_product_after_meta_button', 11 );
