@@ -18,3 +18,12 @@ function single_product_before_add_to_cart_button() {
 			
 }
 add_action( 'woocommerce_before_add_to_cart_button', 'single_product_before_add_to_cart_button' );
+
+function single_product_after_add_to_cart_button() {
+
+	if( is_product() ) {
+		dynamic_sidebar( 'single-product-after-add-to-cart' );
+	}
+			
+}
+add_action( 'woocommerce_after_add_to_cart_button', 'single_product_after_add_to_cart_button' );
